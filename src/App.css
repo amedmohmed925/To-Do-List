@@ -1,0 +1,127 @@
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+}
+.mainToDo{
+  padding: 10px 15px;
+  border: none;
+  width: 450px;
+  height: fit-content;
+background-color: white;
+}
+*{
+  font-family: sans-serif;
+}
+h2{
+  font-size: 30px;
+  text-align: center;
+}
+input{
+  padding: 15px 40px;
+  width: 210px;
+  outline: none;
+}
+.itemDeletItem{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.CloseIcone{
+  
+  cursor: pointer;
+  padding: 0 15px;
+  font-size: 21px;
+}
+.correct{
+  cursor: pointer;
+  font-size: 21px;
+}
+.correctIcone{
+  background-color: green;
+  color: white;
+  transition: 0.3s;
+  animation: scale 4s;
+  padding: 5px;
+}
+@keyframes scale {
+  0%{
+    transform: scale(0.7);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(0.7);
+  }
+}
+button{
+  background-color:rgb(211, 58, 58);
+  padding: 15px 60px;
+  font-size: 18px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.mainToDo ul li {
+  width: 170px;
+  overflow-wrap: break-word;
+  list-style-type: "➡️ ";
+  cursor: pointer;
+  border-bottom: 1px solid;
+  padding: 10px;
+  font-size: 20px;
+}
+.done{
+  text-decoration: line-through red;
+}
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body  {
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+  background-size:cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;              
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
+
+.center
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(75, 75, 250, 0.3);
+  border-radius: 3px;
+}
+.center h1{
+  text-align:center;
+  color:white;
+  font-family: 'Source Code Pro', monospace;
+  text-transform:uppercase;
+}
