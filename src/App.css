@@ -7,7 +7,7 @@
 .mainToDo{
   padding: 10px 15px;
   border: none;
-  width: 450px;
+  width: 550px;
   height: fit-content;
 background-color: white;
 }
@@ -20,7 +20,7 @@ h2{
 }
 input{
   padding: 15px 40px;
-  width: 210px;
+  width: 310px;
   outline: none;
 }
 .itemDeletItem{
@@ -65,7 +65,7 @@ button{
   cursor: pointer;
 }
 .mainToDo ul li {
-  width: 170px;
+  width: fit-content;
   overflow-wrap: break-word;
   list-style-type: "➡️ ";
   cursor: pointer;
@@ -124,4 +124,15 @@ to {background-position: -100px 0px;background-size:2750px;}
   color:white;
   font-family: 'Source Code Pro', monospace;
   text-transform:uppercase;
+}
+@media (min-width: 320px) and (max-width: 600px) {
+  .mainToDo{
+    width: 95%;
+  }
+  input{
+    width: 72%;
+  }
+  .mainToDo ul li{
+    font-size: 16px;
+  }
 }
