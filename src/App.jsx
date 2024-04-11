@@ -43,7 +43,7 @@ function App() {
     <div className='App center'>
       <div className='mainToDo'>
         <div className="header">
-        <img className='imgTitle' src="/public/to-do-list.png" alt="" />
+        <img className='imgTitle' src="/public/checklist.png" alt="" />
         <h2>To Do List</h2>
         </div>
         
