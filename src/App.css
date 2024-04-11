@@ -1,9 +1,4 @@
-#root{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 97vh;
-}
+
 .mainToDo{
   padding: 10px 15px;
   border: none;
