@@ -17,8 +17,11 @@ background-color: white;
   align-items: center;
 }
 .imgTitle{
-  width: 50px;
-  padding: 0 10px;
+  width: 99px;
+    /* padding: 0 10px; */
+    font-size: 20px;
+    height: 50px;
+    color: rgb(0, 187, 143);
 }
 *{
   font-family: sans-serif;
