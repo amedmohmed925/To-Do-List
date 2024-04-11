@@ -42,7 +42,11 @@ function App() {
   return (
     <div className='App center'>
       <div className='mainToDo'>
+        <div className="header">
+        <img className='imgTitle' src="/public/to-do-list.png" alt="" />
         <h2>To Do List</h2>
+        </div>
+        
         <ul>
           {todos.map(({ textInput, completed, classs }, index) => (
             <div className='itemDeletItem' key={index}>

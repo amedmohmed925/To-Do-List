@@ -11,12 +11,22 @@
   height: fit-content;
 background-color: white;
 }
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgTitle{
+  width: 50px;
+  padding: 0 10px;
+}
 *{
   font-family: sans-serif;
 }
 h2{
   font-size: 30px;
   text-align: center;
+  display: inline;
 }
 input{
   padding: 15px 40px;
@@ -39,21 +49,24 @@ input{
   font-size: 21px;
 }
 .correctIcone{
-  background-color: green;
-  color: white;
+  background-color: white;
   transition: 0.3s;
-  animation: scale 4s;
+  animation: scale 1s;
   padding: 5px;
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+  display: inline-block;
+  text-align: center;
+  border: 2px solid rgb(0 187 53);
 }
 @keyframes scale {
   0%{
     transform: scale(0.7);
   }
-  50%{
-    transform: scale(1.1);
-  }
+ 
   100%{
-    transform: scale(0.7);
+    transform: scale(1.0);
   }
 }
 button{
@@ -134,5 +147,8 @@ to {background-position: -100px 0px;background-size:2750px;}
   }
   .mainToDo ul li{
     font-size: 16px;
+  }
+  .Icons{
+    display: flex;
   }
 }
